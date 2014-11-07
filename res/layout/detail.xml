@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:fadeScrollbars="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollbars="vertical"> 
+    <!-- 
+    <ScrollView android:orientation="vertical" android:measureAllChildren="true" android:fillViewport="true" android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+ -->
+		<LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="fill_parent">
+		 
+			<LinearLayout android:orientation="vertical" android:gravity="center" android:layout_height="wrap_content" android:layout_width="fill_parent">
+					 <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#106184" />
+			</LinearLayout>
+	    
+	    	<LinearLayout android:background="@drawable/detail_layout_shape" android:layout_margin="8dp" android:gravity="center" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:id="@+id/phoneTitle" android:textSize="15dip" android:textStyle="bold" style="@style/theme_fontcolor_blake" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+				<TextView android:id="@+id/phoneVersion" style="@style/theme_fontcolor_blake" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+				<TextView android:id="@+id/phonePrice" android:textColor="@color/red" style="@style/theme_fontcolor_blake" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+				<TextView android:id="@+id/updateTime" style="@style/theme_fontcolor_blake" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+				<TextView android:id="@+id/phoneDetail" style="@style/theme_fontcolor_blake" android:layout_height="wrap_content" android:layout_width="fill_parent"></TextView>
+			</LinearLayout>
+			
+			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="5dp" android:gravity="center">
+				<LinearLayout android:background="@drawable/bt_red" android:layout_marginLeft="5dp" android:gravity="center" android:layout_height="wrap_content" android:layout_width="fill_parent">
+					<TextView android:id="@+id/bt_sc" style="@style/theme_fontcolor_white" android:layout_height="wrap_content" android:text="收   藏" android:layout_width="fill_parent" android:gravity="center"></TextView>
+				</LinearLayout>
+			</LinearLayout>
+	
+		</LinearLayout>
+ 	
+</ScrollView>
+	
+		
+
+    	

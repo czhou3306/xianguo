@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/search_title_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/detail_goback"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/goback" />
+
+        <TextView
+            android:id="@+id/detail_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="商品详情"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="28dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/detail_tab_bg"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp" >
+
+        <TextView
+            android:id="@+id/tab_detail"
+            style="@style/theme_fontcolor_blake"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/detail_tab_select"
+            android:gravity="center"
+            android:text="详情"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/tab_buy"
+            style="@style/theme_fontcolor_blake"
+            android:layout_width="80dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/detail_tab_def"
+            android:gravity="center"
+            android:text="购买指南"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/detailBody"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+</LinearLayout>
